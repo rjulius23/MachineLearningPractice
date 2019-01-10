@@ -1,0 +1,232 @@
+  [36,1] = y = 2x
+  [37,1] = y = 2*x
+  [38,1] = plot(y=2*x)
+  [39,1] = plot(2*x)
+  [40,1] = plot
+  [41,1] = x = [0,1,2,3,4,5]
+  [42,1] = y = [2,4,6,8,10,12]
+  [43,1] = plot(x,y)
+  [44,1] = y = [2,9,6,3,1,34]
+  [45,1] = plot(x,y)
+  [46,1] = doc plot
+  [47,1] = plot3
+  [48,1] = doc plot3
+  [49,1] = z = [4,5,6,7,8,9]
+  [50,1] = plot3(x,y,z)
+  [51,1] = function y = x**2
+  [52,1] = function y = sqrt(x) + sqrt(z)
+  [53,1] = y
+  [54,1] = y = sqrt(x) + sqrt(z)
+  [55,1] = plot3(x,y,z)
+  [56,1] = )
+  [57,1] = plot3(x,y,pow2(x+y))
+  [58,1] = plot3(x,pow(x+y),z)
+  [59,1] = plot3(x,pow2(x+y),z)
+  [60,1] = z = pow2(x+y)
+  [61,1] = plot3(x,pow2(x+y),z)
+  [62,1] = doc linspace
+  [63,1] = x = y = linspace(-10,10,40)
+  [64,1] = [xx, yy] = meshgrid (x, y)
+  [65,1] = z = pow2(xx - yy)
+  [66,1] = plot3(x,y,z)
+  [67,1] = y = linspace(-10,10,40)
+  [68,1] = x = 1 + 3*x
+  [69,1] = x = 0
+  [70,1] = x = (y-1)/3
+  [71,1] = z = 1/80 * sum(pow2(x-y))
+  [72,1] = x
+  [73,1] = y
+  [74,1] = z = pow2(x-y)
+  [75,1] = plot3(x,y,z)
+  [76,1] = [xx, yy] = meshgrid (x, y)
+  [77,1] = z = pow2(xx-yy)
+  [78,1] = plot3(x,y,z)
+  [79,1] = u = [-3 4 5]
+  [80,1] = v = [3;1;5]
+  [81,1] = u*v
+  [82,1] = u = [-3 4 3]
+  [83,1] = u*v
+  [84,1] = exit
+
+  [85,1] = # Octave 4.2.2, Mon Jul 09 03:54:48 2018 CEST <egyuhal@elxad9bwj12>
+  [86,1] = PS('>> ');
+  [87,1] = PS1('>> ');
+  [88,1] = A = randn(3,2)
+  [89,1] = sz = size(A)
+  [90,1] = sz[0]
+  [91,1] = sz[1]
+  [92,1] = help get
+  [93,1] = help index
+  [94,1] = sz(0)
+  [95,1] = sz{0}
+  [96,1] = sz[1]
+  [97,1] = sz [1]
+  [98,1] = sz [0]
+  [99,1] = sz((0))
+  [100,1] = sz[[0]]
+  [101,1] = sz [[0]]
+  [102,1] = sz at [[0]]
+  [103,1] = sz
+  [104,1] = sz(0)
+  [105,1] = sz(1)
+  [106,1] = sz
+  [107,1] = sz(2)
+  [108,1] = sz(:)
+  [109,1] = pwd
+  [110,1] = who
+  [111,1] = whos
+  [112,1] = clear
+  [113,1] = whos
+  [114,1] = A = [1 2; 3 4; 5 6]
+  [115,1] = A(3,2)
+  [116,1] = A(3,2) % A_32
+  [117,1] = A(2,:) % A_32
+  [118,1] = history
+  [119,1] = history
+  [120,1] = A(2,:)
+  [121,1] = A([1 3], :)
+  [122,1] = A(:,2
+  [123,1] = )
+  [124,1] = A(:, 2) = [10; 11; 12]
+  [125,1] = A
+  [126,1] = A = [A, [100, 101, 102]]
+  [127,1] = A = [A, [100; 101;102]]
+  [128,1] = A = [A, [100; 101;102]] % append another column vector to the right of A
+  [129,1] = A(:) % put all elements of A into a signle column vector
+  [130,1] = A = [1 2; 3 4; 5 6]
+  [131,1] = B = [10 12; 13 14; 15 16]
+  [132,1] = C = [A B]
+  [133,1] = C = [A B] % concatenate A and B
+  [134,1] = C = [A; B] % put A on top of B
+  [135,1] = [A B] % it is the same as [A, B]
+
+  150 A = [1 2; 3 4; 5 6]
+  151 B = [11 12; 13 14; 15 16]
+  152 A * B % Matrix multiplcation
+  153 C = [1 2; 1 2]
+  154 A * C % Matrix multiplication
+  155 A .* B % Element wise multiplication, A_11 * B_11, A_12 * B_12 ... etc
+  156 A .^ 2 % Element wise squaring of A
+  157 v = [1;2;3]
+  158 1 ./ v
+  159 1 ./ v % Element wise inverse of the v
+  160 exp(v) % multiplying each element of v with e
+  161 -v % gives the -1 * v
+  162 v + ones(length(v), 1) % increase v elements by one
+  163 v + 1 % increases v element wise , each element increased by one
+  164 A' % is to generate transpose A
+  165 (A')' % this should be the original A
+  166 a = [1 15 2 0.5]
+  167 val = max(a) % teruns the max of the vector a
+  168 [val, ind] = max(a) % returns the max and its index inside the vector
+  169 a < 3 % element wise comparison, will be 1 0 1 1 the result, 1 is true, 0 is false
+  170 find(a < 3) % should find all the elements in vector a that match the condition
+  171 find(a < 3) % should find all the elements in vector a that match the condition and return their index
+  172 A
+  173 A = magic(3)
+  174 help magic
+  175 A = magic(9)
+  176 A = magic(3)
+  177 A = magic(3)
+  178 A = magic(3)
+  179 A = magic(3) % all rows and columns and diagonals are equal to the same amount
+  180 [r,c] = find(A >= 7) % find the row and column of the elements which are greater than eq 7 in A
+  181 floor(a) % rounds down to 0
+  182 ceil(a) % rounds down to 1
+  183 prod(a) % multiplies the elements together
+  184 max(A, [], 1) % checks the column wise maximum of the elements
+  185 max(A, [], 2) % checks the row wise maximum of the elements
+  186 max(A(:)) % hind the max element in whole A
+  187 max(max(A)) % find the max element in whole A
+  188 sum(A,1) % sum up all the columns of A
+  189 sum(A,2) % sum up all the rows of A
+  190 pinv(A) % inverse of A
+  191 temp = pinv(A)
+  192 temp * A % should be the identity matrix
+
+  197 t=[0:0.01:0.98] % Generate data for plotting
+  198 y1 = sin(2*pi*4*t)
+  199 plot(t,y1)
+  200 y2 = cos(2*pi*4*t)
+  201 plot(t,y2)
+  202 plot(t,y2);
+  203 hold on; % Allows to plot on the same window
+  204 plot(t,y1, 'r');
+  205 % plot(t,y1, 'r'); 'r' shows the red color of the plot
+  206 xlabel 'time'
+  207 plot(t,y2);
+  208 hold on; % Allows to plot on the same window
+  209 plot(t,y1, 'r');
+  210 xlabel 'time'; 
+  211 ylabel 'value';
+  212 legend ('cos', 'sin');
+  213 title 'my plot'
+  214 print -dpng 'myplot.png' % to save the plot
+  215 help print
+  216 print -dpng 'myplot.png' % to save the plot
+  217 subplot(1,2,1); % Divides plot a 1x2 grid access first element
+  218 plot(t,y1, 'r');
+  219 subplot(1,2,2); % Divides plot a 1x2 grid access second element
+  220 plot(t,y2, 'g');
+  221 axis([0.5 1 -1 1]) % changes the axes values
+  222 axis([10 1 -1 10]) % changes the axes values
+  223 axis([0.25 1 -1 1]) % changes the axes values
+  224 clf;
+  225 A = magic(5)
+  226 imagesc A
+  227 imagesc(a)
+  228 imagesc(A)
+  229 imagesc(A), colorbar
+  230 imagesc(A), colorbar % colorized representation of the matrix
+  231 imagesc(magic(21)), colorbar % colorized representation of the matrix
+  232 a=1, b=2, c=3 % command chaining with comma
+
+    235 v = zeros(10,1)
+  236 for i=1:10,
+  237    v(i) = 2^i;
+  238 end;
+  239 v
+  240 % the indentation is not important for the for loop, but looks better
+  241 indices=1:10
+  242 for i=indices,
+  243    disp(i)
+  244 end;
+  245 % break and continue also works in octave
+  246 i = 1
+  247 while i <= 5,
+  248    v(i) = 100;
+  249    i = i+1;
+  250 end;
+  251 v
+  252 i = 1;
+  253 while true,
+  254     v(i) = 999;
+  255     i = i + 1;
+  256     if i == 6,
+  257        break;
+  258     end;
+  259 end;
+  260 v
+  261 v(1) = 2
+  262 if v(1) == 2,
+  263     disp('The value is one');
+  264 elseif v(1) == 2,
+  265     disp('The value is two');
+  266 else
+  267     disp('other');
+  268 end;
+  269 addpath('/home/egyuhal/SKYNET/MachineLearning/Octave/')
+  270 squareThisNumber 5
+  271 squareThisNumber(5)
+  272 squareAndCubeThisNumber(5)
+  273 squareAndCubeThisNumber(5)
+  274 [a,b] = squareAndCubeThisNumber(5)
+  275 X = [1 1; 1 2; 1 3]
+  276 y = [1; 2; 3]
+  277 theta = [0; 1]
+  278 j = costFunction(X,y,theta)
+  279 theta = [0; 0]
+  280 j = costFunction(X,y,theta)
+
+
+

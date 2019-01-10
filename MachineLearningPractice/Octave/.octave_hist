@@ -1,0 +1,140 @@
+5 +6
+repmat 5
+a=[1,2,3]
+a=[1,2,3 3,4,5]
+a=[1,2,3;3,4,5]
+a=[1,2,3;3,4,5]
+a=[1,1;1,1]
+b=[1,0;0,1]
+repmat a,b
+repmat (a,b)
+a=[1,1;1,1]
+b=[1,0;0,1]
+repmat(a,b)
+help repmat
+repmat(a,2)
+repmat(a,4)
+repmat(a,5)
+repmat(b,5)
+clear
+clean
+reset
+plot
+computeCostFunction
+computeCostFunction
+computeCostFunction
+X=[1,2,3,4,5]
+y=[1,2,3,4,5]
+theta=0.5
+computeCostFunction 
+J
+exit
+# Octave 4.2.2, Sat Jul 07 19:19:22 2018 CEST <egyuhal@elxad9bwj12>
+# Octave 4.2.2, Sat Jul 07 19:19:29 2018 CEST <egyuhal@elxad9bwj12>
+# Octave 4.2.2, Sun Jul 08 11:59:38 2018 CEST <egyuhal@elxad9bwj12>
+# Octave 4.2.2, Sun Jul 08 12:00:02 2018 CEST <egyuhal@elxad9bwj12>
+y = 2x
+y = 2*x
+plot(y=2*x)
+plot(2*x)
+plot
+x = [0,1,2,3,4,5]
+y = [2,4,6,8,10,12]
+plot(x,y)
+y = [2,9,6,3,1,34]
+plot(x,y)
+doc plot
+plot3
+doc plot3
+z = [4,5,6,7,8,9]
+plot3(x,y,z)
+function y = x**2
+function y = sqrt(x) + sqrt(z)
+y
+y = sqrt(x) + sqrt(z)
+plot3(x,y,z)
+)
+plot3(x,y,pow2(x+y))
+plot3(x,pow(x+y),z)
+plot3(x,pow2(x+y),z)
+z = pow2(x+y)
+plot3(x,pow2(x+y),z)
+doc linspace
+x = y = linspace(-10,10,40)
+[xx, yy] = meshgrid (x, y)
+z = pow2(xx - yy)
+plot3(x,y,z)
+y = linspace(-10,10,40)
+x = 1 + 3*x
+x = 0
+x = (y-1)/3
+z = 1/80 * sum(pow2(x-y))
+x
+y
+z = pow2(x-y)
+plot3(x,y,z)
+[xx, yy] = meshgrid (x, y)
+z = pow2(xx-yy)
+plot3(x,y,z)
+u = [-3 4 5]
+v = [3;1;5]
+u*v
+u = [-3 4 3]
+u*v
+exit
+# Octave 4.2.2, Mon Jul 09 03:54:48 2018 CEST <egyuhal@elxad9bwj12>
+PS('>> ');
+PS1('>> ');
+A = randn(3,2)
+sz = size(A)
+sz[0]
+sz[1]
+help get
+help index
+sz(0)
+sz{0}
+sz[1]
+sz [1]
+sz [0]
+sz((0))
+sz[[0]]
+sz [[0]]
+sz at [[0]]
+sz
+sz(0)
+sz(1)
+sz
+sz(2)
+sz(:)
+pwd
+who
+whos
+clear
+whos
+A = [1 2; 3 4; 5 6]
+A(3,2)
+A(3,2) % A_32
+A(2,:) % A_32
+history
+history
+A(2,:)
+A([1 3], :)
+A(:,2
+)
+A(:, 2) = [10; 11; 12]
+A
+A = [A, [100, 101, 102]]
+A = [A, [100; 101;102]]
+A = [A, [100; 101;102]] % append another column vector to the right of A
+A(:) % put all elements of A into a signle column vector
+A = [1 2; 3 4; 5 6]
+B = [10 12; 13 14; 15 16]
+C = [A B]
+C = [A B] % concatenate A and B
+C = [A; B] % put A on top of B
+[A B] % it is the same as [A, B]
+help history_file
+help history_save
+history_save
+history
+# Octave 4.2.2, Mon Jul 09 04:57:15 2018 CEST <egyuhal@elxad9bwj12>
